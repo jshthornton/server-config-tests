@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/jshthornton/server-config-tests/issues"
   },
-  "homepage": "https://github.com/jshthornton/server-config-tests#readme"
+  "homepage": "https://github.com/jshthornton/server-config-tests#readme",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "lodash": "^3.10.1",
+    "mocha": "^2.3.4",
+    "request": "^2.67.0"
+  }
 }
