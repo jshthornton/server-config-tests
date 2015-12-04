@@ -14,6 +14,13 @@ describe('Slash', function() {
       });
     });
   } else {
-
+    describe('non-trailing', function() {
+      it('Should redirect trailing to non-trailing', function(done) {
+        request('http://stackoverflow.com/review/', function(error, response, body) {
+          expect(response.request.href).to.eq('http://stackoverflow.com/review');
+          done(error);
+        });
+      });
+    });
   }
 });
